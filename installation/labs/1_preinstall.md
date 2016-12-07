@@ -18,12 +18,28 @@ Linux instance-6 2.6.32-642.11.1.el6.x86_64 #1 SMP Fri Nov 18 19:25:05 UTC 2016 
     inet 10.146.0.2/32 brd 10.146.0.2 scope global eth0
     inet6 fe80::4001:aff:fe92:2/64 scope link 
        valid_lft forever preferred_lft forever
-> hostname       
+       
+> hostname and dns
 [root@instance-10 adeadang]# cat /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 10.146.0.6 instance-10.c.api-project-778269081458.internal instance-10  # Added by Google
 169.254.169.254 metadata.google.internal  # Added by Google
+
+[root@instance-10 ~]# getent hosts
+127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
+127.0.0.1       localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.146.0.6      instance-10.c.api-project-778269081458.internal instance-10
+169.254.169.254 metadata.google.internal
+[root@instance-10 ~]# nslookup instance-10.c.api-project-778269081458.internal
+Server:         169.254.169.254
+Address:        169.254.169.254#53
+
+Non-authoritative answer:
+Name:   instance-10.c.api-project-778269081458.internal
+Address: 10.146.0.6
+
+[root@instance-10 ~]#
 
 > memory
 [root@instance-10 adeadang]# free 
