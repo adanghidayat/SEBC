@@ -33,7 +33,6 @@ Linux instance-6 2.6.32-642.11.1.el6.x86_64 #1 SMP Fri Nov 18 19:25:05 UTC 2016 
 [root@instance-10 ~]# nslookup instance-10.c.api-project-778269081458.internal
 Server:         169.254.169.254
 Address:        169.254.169.254#53
-
 Non-authoritative answer:
 Name:   instance-10.c.api-project-778269081458.internal
 Address: 10.146.0.6
