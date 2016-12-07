@@ -18,7 +18,7 @@ Linux instance-6 2.6.32-642.11.1.el6.x86_64 #1 SMP Fri Nov 18 19:25:05 UTC 2016 
     inet 10.146.0.2/32 brd 10.146.0.2 scope global eth0
     inet6 fe80::4001:aff:fe92:2/64 scope link 
        valid_lft forever preferred_lft forever
-       
+
 > hostname and dns
 [root@instance-10 adeadang]# cat /etc/hosts
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
