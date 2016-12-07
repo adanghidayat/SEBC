@@ -40,26 +40,16 @@ tmpfs           6.4G     0  6.4G   0% /dev/shm
 
 > mount and partition
 [root@instance-10 adeadang]# cat /etc/fstab 
-
-#
-# /etc/fstab
-# Created by anaconda on Tue Nov 29 20:23:36 2016
-#
-# Accessible filesystems, by reference, are maintained under '/dev/disk'
-# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info
-#
-UUID=eaca619d-70f4-447b-b6b3-c2faaa4aeae8 /                       ext4    defaults,barrier=1 1 1
+UUID=eaca619d-70f4-447b-b6b3-c2faaa4aeae8 /     ext4    defaults,barrier=1 1 1
 tmpfs                   /dev/shm                tmpfs   defaults        0 0
 devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
 sysfs                   /sys                    sysfs   defaults        0 0
 proc                    /proc                   proc    defaults        0 0
 
-> vm.swappines
+> vm.swappines adding  "vm.swappiness = 10" to file /etc/sysctl.conf 
 [root@instance-6 adeadang]# echo 10 > /proc/sys/vm/swappiness
 [root@instance-6 adeadang]# cat /proc/sys/vm/swappiness 
 10
- 
-adding  "vm.swappiness = 10" to file /etc/sysctl.conf 
 
 > hugepage disabled
 [root@instance-10 adeadang]# cat /sys/kernel/mm/transparent_hugepage/enabled
