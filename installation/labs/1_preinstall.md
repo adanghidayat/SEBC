@@ -25,7 +25,6 @@ Linux instance-6 2.6.32-642.11.1.el6.x86_64 #1 SMP Fri Nov 18 19:25:05 UTC 2016 
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 10.146.0.6 instance-10.c.api-project-778269081458.internal instance-10  # Added by Google
 169.254.169.254 metadata.google.internal  # Added by Google
-
 [root@instance-10 ~]# getent hosts
 127.0.0.1       localhost localhost.localdomain localhost4 localhost4.localdomain4
 127.0.0.1       localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -38,8 +37,6 @@ Address:        169.254.169.254#53
 Non-authoritative answer:
 Name:   instance-10.c.api-project-778269081458.internal
 Address: 10.146.0.6
-
-[root@instance-10 ~]#
 
 > memory
 [root@instance-10 adeadang]# free 
