@@ -2,12 +2,18 @@ google cloud account: adeadang@gmail.com
 
 using google cloud env
 
-machine type	name		zone			spec		OS		internal ip	external ip
-n1-highmem-2	instance-1	asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.2	104.198.82.198 
-n1-highmem-2	instance-2	asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.3	104.198.90.255 
-n1-highmem-2	instance-3	asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.4	104.198.84.39 
-n1-highmem-2	instance-4	asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.5	104.198.127.36 
-n1-highmem-2	instance-5	asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.6	104.198.82.187 
+machine type	  name		      zone			        spec		        OS		    internal    ip	external ip
+
+n1-highmem-2	  instance-1	  asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.2	104.198.82.198
+
+n1-highmem-2	  instance-2	  asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.3	104.198.90.255
+
+n1-highmem-2	  instance-3	  asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.4	104.198.84.39Â 
+
+n1-highmem-2	  instance-4	  asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.5	104.198.127.36
+
+n1-highmem-2	  instance-5	  asia-northeast1-b	2 vCPUs, 13 GB	CentOS-6	10.146.0.6	104.198.82.187Â 
+
 
 volume 
 
